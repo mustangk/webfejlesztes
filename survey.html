@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kanyok Zsombor">
+    <meta name="copyright" content="Csak oktatási célokra, a megadott adatokért felelősséget nem vállalok">
+    <meta name="description"
+        content="Egy kitalált légitársaság weboldala, ahol általános információk találhatóak meg a légitársaságról, illetve jegyeket lehet vásárolni, illetve egy kérdőívet kitölteni.">
+    <title>SkyWings Airlines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/plane.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.js"></script>
+    <script src="survey.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>SkyWings Airlines</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="booking.html">Jegyvásárlás</a></li>
+            <li><a href="aboutus.html">Rólunk</a></li>
+            <li><a href="#" id="current">Kérdőív</a></li>
+        </ul>
+    </nav>
+
+    <div id="changingStuff">
+        <p>Kérjük töltse ki kérdőívünket, ezzel segítve munkánkat!</p>
+        <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="kerdoiv" novalidate>
+            <label for="szulev">Születési év: </label> <input type="text" name="szulev" id="szulev" size="1"> <br>
+            <label for="email">Email cím: </label> <input type="text" id="email" name="email"> <br>
+            <label for="honnan">Honnan szeretné, hogy az új járat induljon: </label> <input type="text" id="honnan" name="honnan"> <br>
+            <label for="hova">Hová szeretné, hogy az új járat induljon: </label> <input type="text" id="hova" name="hova"> <br>
+            <label for="why">Kérjük indokolja meg pár szóban a választását</label> <br><textarea name="why" id="why" cols="30" rows="5"></textarea><br>
+            <input type="submit" value="Elküldés">
+            <input type="reset" value="Alaphelyzet">
+        </form>
+    </div>
+
+    <aside class="news">
+        <p class="title">Heti híreink</p>
+        <ul>
+            <li>Elérhető kérdőívünk, melyben Ön döntheti el melyik országba indítsunk heti járatokat!</li>
+            <li>Legújabb repülőgépeink előszőr a Budapest-New York útvonalon közlekednek!</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <div class="contact">
+            <p class="title">Elérhetőség</p>
+            SkyWings Airlines<br>
+            Cím: Repülő út 123, Magasságváros, Légiország<br>
+            Telefon: +36 1 234 5678<br>
+            E-mail: info@skywings.com<br>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 SkyWings Airlines. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

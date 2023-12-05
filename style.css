@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(lightblue, white);
+    background-image: url("images/clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 20px;
+    color: #333333;
+    justify-content: center;
+}
+
+#changingStuff>* {
+    padding: 0 10px;
+}
+
+p.title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 42px;
+}
+
+h1 {
+    margin: 0;
+    color: #4682B4;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #2E4F7D;
+}
+
+nav ul li a#current {
+    background-color: #4682B4;
+    border-radius: 15px;
+}
+
+nav ul li a:hover {
+    background-color: #4682B4;
+    border-radius: 15px;
+}
+
+article {
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-radius: 15px;
+}
+
+article.main h2 {
+    font-size: 32px;
+}
+
+article ul {
+    padding: 0 0 0 20px;
+    margin: 0;
+    list-style-type: square;
+}
+
+aside.news {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 10px;
+    background-color: #A9A9A9;
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+    height: fit-content;
+}
+
+aside.news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside.news p.title {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 15px;
+    margin: 0;
+}
+
+div.contact {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.contact p.title {
+    margin: 0 0 10px 0;
+}
+
+div.copyright {
+    float: left;
+    width: 100%;
+    display: flex;
+}
+
+div.rendeles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#changingStuff {
+    border-radius: 15px;
+    background-color: #87CEEB;
+    margin: 5px;
+    width: 100%;
+}
+
+#rendeles {
+    border-radius: 15px;
+    background-color: #87CEEB;
+    margin: 5px;
+}
+
+.fizetes {
+    border-radius: 15px;
+    background-color: #87CEEB;
+    margin: 5px;
+}
+
+#kosar {
+    border-radius: 15px;
+    margin: 5px;
+}
+
+#kosar {
+    margin-right: 10px;
+    width: 48%
+}
+
+label.error {
+    color: #FB3A3A;
+}
+
+.galleria {
+    width: 50vw;
+    height: 40vw;
+}
+
+#gall {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#gall p {
+    width: 50vw;
+    text-align: center;
+    background-color: #87CEEB;
+    margin: 0;
+}
+
+
+
+@media all and (min-width: 600px) {
+    #gall {
+        flex-basis: 75%;
+    }
+
+    #rendeles {
+        margin-left: 10px;
+        flex-basis: 40%;
+    }
+
+    #kosar {
+        flex-basis: 40%;
+    }
+
+    .fizetes {
+        flex-basis: 40%;
+    }
+
+    #kerdoiv {
+        flex-basis: 80%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    nav ul li {
+        flex-basis: 20%;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .news {
+        flex-basis: 10%;
+        justify-content: right;
+    }
+
+    #changingStuff {
+        flex-basis: 75%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 45%;
+    }
+
+    .routes {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 35%;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    div.contact {
+        flex-basis: 47%;
+    }
+
+    div.copyright {
+        float: right;
+        flex-basis: 47%;
+        justify-content: flex-end;
+        align-self: flex-end;
+    }
+}

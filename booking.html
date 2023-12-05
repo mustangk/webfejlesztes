@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kanyok Zsombor">
+    <meta name="copyright" content="Csak oktatási célokra, a megadott adatokért felelősséget nem vállalok">
+    <meta name="description"
+        content="Egy kitalált légitársaság weboldala, ahol általános információk találhatóak meg a légitársaságról, illetve jegyeket lehet vásárolni, illetve egy kérdőívet kitölteni.">
+    <title>SkyWings Airlines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/plane.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>SkyWings Airlines</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="#" id="current">Jegyvásárlás</a></li>
+            <li><a href="aboutus.html">Rólunk</a></li>
+            <li><a href="survey.html">Kérdőív</a></li>
+        </ul>
+    </nav>
+
+    <div id="rendeles">
+        <label for="foglalas1">Kérjük válassza ki melyik járatunkon szertene utazni: </label>
+        <select id="foglalas1">
+            <option>Budapest - New York</option>
+            <option>London - Tokyo</option>
+            <option>Paris - Dubai</option>
+            <option>Rome - Sydney</option>
+            <option>Los Angeles - Beijing</option>
+            <option>Berlin - Cape Town</option>
+            <option>Toronto - Singapore</option>
+            <option>Moscow - Hong Kong</option>
+            <option>Seoul - Mumbai</option>
+            <option>Amsterdam - Rio de Janeiro</option>
+            <option>San Francisco - Shanghai</option>
+            <option>Madrid - Buenos Aires</option>
+            <option>Stockholm - Auckland</option>
+            <option>Istanbul - Seoul</option>
+            <option>Barcelona - Vancouver</option>
+        </select> <br>
+
+        <label for="foglalas2">Kérjük válassza ki melyik osztályon szeretne utazni: </label>
+        <select id="foglalas2">
+            <option>Economy - 14990 Ft</option>
+            <option>Premium Economy - 19990 Ft</option>
+            <option>Business - 24990 Ft</option>
+            <option>First Class - 34990 Ft</option>
+        </select> <br>
+        <label for="datum"> Kérjük válasssza ki melyik napon szeretne utazni</label>
+        <input type="date" id="datum"> <br>
+        <input type="button" value="Kosárba helyezés" id="kosarba"> <br>
+        <input type="button" value="Megrendelés" id="veglegesites">
+        <input type="button" value="Kosár kiürítése" id="kosarurites">
+        <script src="jquery-3.7.1.js"></script>
+        <script src="jquery-validation-1.19.5/dist/jquery.validate.js"></script>
+    </div>
+    <div id="kosar"></div>
+
+
+
+    <aside class="news">
+        <p class="title">Heti híreink</p>
+        <ul>
+            <li>Elérhető kérdőívünk, melyben Ön döntheti el melyik országba indítsunk heti járatokat!</li>
+            <li>Legújabb repülőgépeink előszőr a Budapest-New York útvonalon közlekednek!</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <div class="contact">
+            <p class="title">Elérhetőség</p>
+            SkyWings Airlines<br>
+            Cím: Repülő út 123, Magasságváros, Légiország<br>
+            Telefon: +36 1 234 5678<br>
+            E-mail: info@skywings.com<br>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 SkyWings Airlines. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+    <script src="booking.js"></script>
+</body>
+
+</html>
