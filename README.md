@@ -1,1 +1,14 @@
 # webfejlesztes
+
+Készítette: Kanyok Zsombor
+URL:
+Leírás: Egy kitalált légitársaság weboldala, ahol általános információk találhatóak meg a légitársaságról, jegyeket lehet vásárolni, illetve egy kérdőívet kitölteni.
+Javascript: A jegyvásárlás oldalon, előszőr a kiválasztott jegyeket kosárba kell rakni, ezután a megrendelésre kattintva a személyes és fizetési információkat kell megadni, ezek után lehet a rendelést leadni.
+
+Források:
+Háttérkép: https://www.earth.com/news/ice-forms-clouds/
+Google font: https://fonts.google.com/specimen/Open+Sans
+favicon: https://iconscout.com/icon/aircraft-2240419
+szöveg: ChatGPT https://chat.openai.com/
+JS változó elküldése HTML form-nak: https://www.sitepoint.com/community/t/javascript-array-to-form/278902
+Repülőgépek a gallériában: https://www.avenidatravel.hu/geptipusok
