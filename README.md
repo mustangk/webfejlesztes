@@ -1,7 +1,7 @@
 # webfejlesztes
 
 Készítette: Kanyok Zsombor\
-URL:\
+URL: https://mustangk.github.io/webfejlesztes/ \
 Leírás: Egy kitalált légitársaság weboldala, ahol általános információk találhatóak meg a légitársaságról, jegyeket lehet vásárolni, illetve egy kérdőívet kitölteni.\
 Javascript: A jegyvásárlás oldalon, előszőr a kiválasztott jegyeket kosárba kell rakni, ezután a megrendelésre kattintva a személyes és fizetési információkat kell megadni, ezek után lehet a rendelést leadni.
 
