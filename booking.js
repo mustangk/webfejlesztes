@@ -51,7 +51,7 @@ document.getElementById('veglegesites').addEventListener("click", () => {
         <label for="keresztnev">Keresztnév: </label> <input type="text" id="keresztnev" name="keresztnev"> <br>
         <label for="email">Email cím: </label> <input type="text" id="email" name="email"> <br>
         <p>Számlázási cím</p>
-        <label for="irszam">Irányítószám: </label> <input type="text" id="irszam" name="irszam"> <br>
+        <label for="irszam">Irányítószám: </label> <input type="text" id="irszam" name="irszam" size="1"> <br>
         <label for="varos">Város: </label> <input type="text" id="varos" name="varos"> <br>
         <label for="utca">Közterület neve: </label> <input type="text" id="utca" name="utca"> <br>
         <label for="hazszam">Házszám: </label> <input type="text" id="hazszam" name="hazszam"> <br>
